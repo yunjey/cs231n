@@ -149,7 +149,10 @@ class CaptioningRNN(object):
     x, cache_emb = word_embedding_forward(captions_in, W_embed)
 
     # (3) produce hidden state vectors for all timestapes (N, T, H)
-    h, cache_h = rnn_forward(x, h0, Wx, Wh, b)
+    if self.cell_type == 'rnn':
+        h, cache_h = rnn_forward(x, h0, Wx, Wh, b)
+    else: 
+        h, cache_h = lstm_forward(x, h0, Wx, Wh, b)
 
     # (4) compute scores over the vocabulary (N, T, V)
     out, cache_out = temporal_affine_forward(h, W_vocab, b_vocab)
@@ -162,14 +165,16 @@ class CaptioningRNN(object):
     dh, grads['W_vocab'], grads['b_vocab'] = temporal_affine_backward(dout, cache_out)
     
     # (7) backprop for (3)
-    dx, dh0, grads['Wx'], grads['Wh'], grads['b'] = rnn_backward(dh, cache_h)
+    if self.cell_type == 'rnn':
+        dx, dh0, grads['Wx'], grads['Wh'], grads['b'] = rnn_backward(dh, cache_h)
+    else:
+        dx, dh0, grads['Wx'], grads['Wh'], grads['b'] = lstm_backward(dh, cache_h)
 
     # (8) backprop for (2)
     grads['W_embed'] =  word_embedding_backward(dx, cache_emb)
 
     # (9) backprop for (1)
     _, grads['W_proj'], grads['b_proj'] = affine_backward(dh0, cache_h0)
-    
 
 
     ############################################################################
@@ -237,8 +242,9 @@ class CaptioningRNN(object):
     # functions; you'll need to call rnn_step_forward or lstm_step_forward in #
     # a loop.                                                                 #
     ###########################################################################
+    
     h, _ = affine_forward(features, W_proj, b_proj)
-
+    c = 0
     
     for t in range(max_length):
         # (1) Embed the previous word
@@ -247,17 +253,19 @@ class CaptioningRNN(object):
         else:
             word_vec, _ = word_embedding_forward(word_idx, W_embed)
 
-        # (2) RNN step 
-        h, _ = rnn_step_forward(word_vec.reshape(-1, wordvec_dim), h, Wx, Wh, b)  
+        # (2) RNN step or LSTM step
+        if self.cell_type == 'rnn':
+            h, _ = rnn_step_forward(word_vec.reshape(-1, wordvec_dim), h, Wx, Wh, b)  
+        else:
+            h, c, _ = lstm_step_forward(word_vec.reshape(-1, wordvec_dim), h, c, Wx, Wh, b)
 
-
-        # (3) get scores for all words in the vocab
+        # (3) get socres for all words in the vocab
         out, _ = affine_forward(h, W_vocab, b_vocab)     # (N, V)
 
         # (4) select word with highest score 
         word_idx = np.argmax(out, axis=1).reshape(-1, 1)     # (N, 1)
         captions[:, t:t+1] = word_idx
-        
+
         if self.idx_to_word == '<END>':
             break
 
