@@ -31,7 +31,7 @@ normalization, and use it to train deep fully-connected networks.
 The IPython notebook `Dropout.ipynb` will help you implement Dropout and explore
 its effects on model generalization.
 
-### Q4: ConvNet on CIFAR-10 (Completed)
+### Q4: ConvNet on CIFAR-10 (A Little Bit Left)
 In the IPython Notebook `ConvolutionalNetworks.ipynb` you will implement several
 new layers that are commonly used in convolutional networks. You will train a
 (shallow) convolutional network on CIFAR-10, and it will then be up to you to
