@@ -1,12 +1,42 @@
-# cs231n
-stanford cs231n 2016 assignment
+# CS231n
+Stanford CS231n 2016 Assignment
+
+</br>
+
+##Assignment1
+
+###Q1: k-Nearest Neighbor classifier (Completed)
+
+###Q2: Training a Support Vector Machine (Completed)
+
+###Q3: Implement a Softmax classifier (Completed)
+
+###Q4: Two-Layer Neural Network (Not Yet)
+
+###Q5: Higher Level Representations: Image Features (Not Yet)
+
+</br>
+
+##Assignment2
+
+### Q1: Fully-connected Neural Network (Completed)
+
+### Q2: Batch Normalization (Completed)
+
+### Q3: Dropout (Completed)
+
+### Q4: ConvNet on CIFAR-10 (A Little Bit Left)
+
+</br>
 
 
-##assignment3
-RNN_Captioning.ipynb (Complete)
+##Assignment3
 
-LSTM_Captioning.ipynb (Complete)
+### Q1: Image Captioning with Vanilla RNNs (Completed)
 
-ImageGradients.ipynb (not yet)
+### Q2: Image Captioning with LSTMs (Completed)
 
-ImageGeneration.ipynb (not yet)
+### Q3: Image Gradients: Saliency maps and Fooling Images (Not Yet)
+
+### Q4: Image Generation: Classes, Inversion, DeepDream (Not Yet)
+
