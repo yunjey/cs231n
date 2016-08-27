@@ -13,7 +13,7 @@ are as follows:
 - understand the architecture of **Convolutional Neural Networks** and train
   gain experience with training these models on data
 
-
+#
 
 
 
