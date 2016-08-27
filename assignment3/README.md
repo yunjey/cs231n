@@ -9,9 +9,10 @@ The goals of this assignment are as follows:
 - understand how a trained convolutional network can be used to **compute gradients** with respect to the input image
 - implement and different applications of image gradients, including **saliency maps**, **fooling images**, **class visualizations**, **feature inversion**, and **DeepDream**.
 
+
 ### Q1: Image Captioning with Vanilla RNNs (Completed)
 
-The IPython notebook RNN_Captioning.ipynb will walk you through the implementation of an image captioning system on MS-COCO using vanilla recurrent networks.
+The IPython notebook 'RNN_Captioning.ipynb' will walk you through the implementation of an image captioning system on MS-COCO using vanilla recurrent networks.
 
 ### Q2: Image Captioning with LSTMs (Completed)
 
