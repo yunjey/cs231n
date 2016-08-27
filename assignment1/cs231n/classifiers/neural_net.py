@@ -35,7 +35,7 @@ class TwoLayerNet(object):
     """
     self.params = {}
     self.params['W1'] = std * np.random.randn(input_size, hidden_size)
-    self.params['b1'] = std * np.random.randn(hidden_size)  + 0.5 #np.zeros(hidden_size)
+    self.params['b1'] = np.zeros(hidden_size) #std * np.random.randn(hidden_size)  + 0.5 
     self.params['W2'] = std * np.random.randn(hidden_size, output_size)
     self.params['b2'] = np.zeros(output_size)
 
