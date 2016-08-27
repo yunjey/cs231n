@@ -11,9 +11,9 @@ Stanford CS231n 2016 Assignment
 
 ###Q3: Implement a Softmax classifier (Completed)
 
-###Q4: Two-Layer Neural Network (Not Yet)
+###Q4: Two-Layer Neural Network (Completed)
 
-###Q5: Higher Level Representations: Image Features (Not Yet)
+###Q5: Higher Level Representations: Image Features (Completed)
 
 </br>
 
