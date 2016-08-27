@@ -15,6 +15,8 @@ are as follows:
 
 
 
+
+
 ### Q1: Fully-connected Neural Network (Completed)
 The IPython notebook `FullyConnectedNets.ipynb` will introduce you to our
 modular layer design, and then use those layers to implement fully-connected
