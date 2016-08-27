@@ -9,22 +9,23 @@ The goals of this assignment are as follows:
 - understand how a trained convolutional network can be used to **compute gradients** with respect to the input image
 - implement and different applications of image gradients, including **saliency maps**, **fooling images**, **class visualizations**, **feature inversion**, and **DeepDream**.
 
+</br>
 
 ### Q1: Image Captioning with Vanilla RNNs (Completed)
 
-The IPython notebook 'RNN_Captioning.ipynb' will walk you through the implementation of an image captioning system on MS-COCO using vanilla recurrent networks.
+The IPython notebook `RNN_Captioning.ipynb` will walk you through the implementation of an image captioning system on MS-COCO using vanilla recurrent networks.
 
 ### Q2: Image Captioning with LSTMs (Completed)
 
-The IPython notebook 'LSTM_Captioning.ipynb' will walk you through the implementation of Long-Short Term Memory (LSTM) RNNs, and apply them to image captioning on MS-COCO.
+The IPython notebook `LSTM_Captioning.ipynb` will walk you through the implementation of Long-Short Term Memory (LSTM) RNNs, and apply them to image captioning on MS-COCO.
 
 ### Q3: Image Gradients: Saliency maps and Fooling Images (Not Yet)
 
-The IPython notebook 'ImageGradients.ipynb' will introduce the TinyImageNet dataset. You will use a pretrained model on this dataset to compute gradients with respect to the image, and use them to produce saliency maps and fooling images.
+The IPython notebook `ImageGradients.ipynb` will introduce the TinyImageNet dataset. You will use a pretrained model on this dataset to compute gradients with respect to the image, and use them to produce saliency maps and fooling images.
 
 ### Q4: Image Generation: Classes, Inversion, DeepDream (Not Yet)
 
-In the IPython notebook 'ImageGeneration.ipynb' you will use the pretrained TinyImageNet model to generate images. In particular you will generate class visualizations and implement feature inversion and DeepDream.
+In the IPython notebook `ImageGeneration.ipynb` you will use the pretrained TinyImageNet model to generate images. In particular you will generate class visualizations and implement feature inversion and DeepDream.
 
 
 
