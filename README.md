@@ -1,5 +1,5 @@
 # CS231n
-Stanford cs231n 2016 Assignment
+Stanford CS231n 2016 Assignment
 
 </br>
 
