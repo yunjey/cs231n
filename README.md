@@ -1,4 +1,4 @@
-# CS231n
+# CS231n : Deep Learning Lecture for Computer Vision
 Stanford CS231n 2016 Assignment
 
 </br>
