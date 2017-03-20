@@ -3,21 +3,21 @@ Stanford CS231n 2016 Assignment
 
 </br>
 
-##Assignment1
+## Assignment1
 
-###Q1: k-Nearest Neighbor classifier (Completed)
+### Q1: k-Nearest Neighbor classifier (Completed)
 
-###Q2: Training a Support Vector Machine (Completed)
+### Q2: Training a Support Vector Machine (Completed)
 
-###Q3: Implement a Softmax classifier (Completed)
+### Q3: Implement a Softmax classifier (Completed)
 
-###Q4: Two-Layer Neural Network (Completed)
+### Q4: Two-Layer Neural Network (Completed)
 
-###Q5: Higher Level Representations: Image Features (Completed)
+### Q5: Higher Level Representations: Image Features (Completed)
 
 </br>
 
-##Assignment2
+## Assignment2
 
 ### Q1: Fully-connected Neural Network (Completed)
 
@@ -30,7 +30,7 @@ Stanford CS231n 2016 Assignment
 </br>
 
 
-##Assignment3
+## Assignment3
 
 ### Q1: Image Captioning with Vanilla RNNs (Completed)
 
